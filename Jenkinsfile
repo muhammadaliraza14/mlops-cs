@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git git branch: 'main', credentialsId: 'gittoken', url: 'https://github.com/muhammadaliraza14/mlops-cs.git'
-            }Í
+                git branch: 'main', credentialsId: 'yourCredentialsId', url: 'https://github.com/yourusername/yourrepository.git'
+            }
         }
         stage('Install Dependencies') {
             steps {
